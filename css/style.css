@@ -137,13 +137,10 @@
   /* end */
 
   /* caesar */
-.main-caesar{
-  margin-top: 10vw;
-}
 
-  .container {
+  .caesar-container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 120px auto;
   }
 
   .input-div {
