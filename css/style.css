@@ -142,10 +142,6 @@ main{
     align-items: start;
 }
 
-.button{
-    background-color: green;
-}
-
 .buttons{
     display: flex;
     justify-content: center;
