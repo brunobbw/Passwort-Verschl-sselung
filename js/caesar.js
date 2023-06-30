@@ -51,7 +51,7 @@
       function encode() {
         var input = document.querySelector('.input-field').value;
         var output = '';
-        var shift = 3; // Number of shifts for encoding/decoding
+        var shift = 3; // Shift azahl fürd decode
       
         for (var i = 0; i < input.length; i++) {
           var charCode = input.charCodeAt(i);
