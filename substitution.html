@@ -9,35 +9,49 @@
 </head>
 
 <body>
+
+  <!--Das isch navigations bar-->
   <div class="navigation">
     <ul>
+        <!--Link fürd Home site-->
       <li class="list">
         <a href="index.html">
           <span class="icon"><i class="fa-solid fa-house"></i></span>
           <span class="text">Home</span>
         </a>
       </li>
+        <!--Link fürd Caesar site-->
       <li class="list">
         <a href="caesar.html">
           <span class="icon"><i class="fa-solid fa-crown"></i></span>
           <span class="text">Caesar</span>
         </a>
       </li>
+        <!--Link fürd Substitution site-->
       <li class="list">
         <a href="substitution.html">
           <span class="icon"><i class="fa-solid fa-puzzle-piece"></i></span>
           <span class="text">Substitution</span>
         </a>
       </li>
+        <!--Link fürd XOR site-->
       <li class="list">
         <a href="xor.html" id="user-icon">
           <span class="icon"><i class="fa-solid fa-key"></i></span>
           <span class="text">XOR</span>
         </a>
       </li>
+        <!--Link fürd Dark/Light funktion-->
+      <li class="list">
+        <a href="#" id="dark-mode-toggle" onclick="toggleDarkMode()">
+          <span class="icon"><i class="fa-solid fa-sun"></i></span>
+          <span class="text">Dark/Light</span>
+        </a>
+      </li>
     </ul>
   </div>
 
+<<<<<<< HEAD:substitution.html
   <div class="caesar-container">
     <h2>Substitution Cipher</h2>
     <div class="input-div">
@@ -54,6 +68,21 @@
   </div>
 
   <script src="js/script.js"></script>
+=======
+  <section class="options">
+    <h2 class="options-title">Pick your Cipher</h2>
+    <div class="button-container">
+      <!--button fürd ceaser funktion-->
+      <a href="caesar.html"><button class="button">Caesar</button></a>
+      <!--button fürd Substitution funktion-->
+      <a href="substitution.html"><button class="button">Substitution</button></a>
+      <!--button fürd XOR funktion-->
+      <a href="xor.html"><button class="button">XOR</button></a>
+    </div>
+  </section>
+  <!--rüeft js uf-->
+  <script src="ceasar.js"></script>
+>>>>>>> bruno:index.html
 </body>
 
 </html>

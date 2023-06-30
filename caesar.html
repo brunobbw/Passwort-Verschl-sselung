@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Divs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+</head>
+<body>
+  <div class="navigation">
+    <ul>
+      <!--Link fürd home site-->
+      <li class="list">
+        <a href="index.html">
+          <span class="icon"><i class="fa-solid fa-house"></i></span>
+          <span class="text">Home</span>
+        </a>
+        <!--Link fürd ceasar site-->
+      </li>
+      <li class="list">
+        <a href="test.html">
+          <span class="icon"><i class="fa-solid fa-crown"></i></span>
+          <span class="text">Caesar</span>
+        </a>
+        <!--Link fürd substitution site-->
+      </li>
+      <li class="list">
+        <a href="entry.html">
+          <span class="icon"><i class="fa-solid fa-puzzle-piece"></i></span>
+          <span class="text">Substitution</span>
+        </a>
+        <!--Link fürd XOR site-->
+      </li>
+      <li class="list">
+        <a href="xor.html" id="user-icon">
+          <span class="icon"><i class="fa-solid fa-key"></i></span>
+          <span class="text">XOR</span>
+        </a>
+        <!--Link fürd dark/light funktion-->
+      </li>
+      <li class="list">
+        <a href="#" id="dark-mode-toggle" onclick="toggleDarkMode()">
+          <span class="icon"><i class="fa-solid fa-sun"></i></span>
+          <span class="text">Dark/Light</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="caesar-container">
+    <h2>Caesar Cipher</h2>
+    <div class="input-div">
+      <div class="input-icon"><i class="fa-solid fa-pen"></i></div>
+      <input class="input-field" type="text" placeholder="Insert Text">
+    </div>
+    <div class="button-div">
+      <button onclick="checkInput()" onclick="encode()" class="button2">Encode</button>
+      <button onclick="checkInput()" onclick="decode()" class="button1">Decode</button>
+    </div>
+    <div class="output-div">
+      <textarea id="output" placeholder="Output text" disabled></textarea>
+    </div>
+  </div>
+  <script src="ceasar.js">
+  
+  </script>
+</body>
+</html>
