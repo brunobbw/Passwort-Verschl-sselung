@@ -53,8 +53,8 @@
       <input class="input-field" type="text" placeholder="Insert Text">
     </div>
     <div class="button-div">
-      <button onclick="checkInput()" onclick="encode()" class="button2">Encode</button>
-      <button onclick="checkInput()" onclick="decode()" class="button1">Decode</button>
+      <button onclick="encode(), checkInput()" class="button2">Encode</button>
+      <button onclick="decode(), checkInput()" class="button1">Decode</button>
     </div>
     <div class="output-div">
       <textarea id="output" placeholder="Output text" disabled></textarea>

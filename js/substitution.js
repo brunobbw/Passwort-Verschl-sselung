@@ -26,7 +26,7 @@
           body.style.backgroundColor = '#ffffff'; // Hex-Wert fürd light mode
         }
       }
-      
+
   // Substitution Function
   
   const substitutionMap = {
@@ -58,7 +58,7 @@
       Z: 'M'
     };
     
-    function subEncode() {
+    function encode() {
       const inputText = document.getElementById('inputText').value;
       let outputText = '';
     
@@ -71,7 +71,7 @@
       document.getElementById('output').value = outputText;
     }
     
-    function subDecode() {
+    function decode() {
         const inputText = document.getElementById('inputText').value;
         let outputText = '';
       
