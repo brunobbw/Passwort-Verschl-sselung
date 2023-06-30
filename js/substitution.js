@@ -9,7 +9,7 @@
     }
   }
   
-        //Funktion für  Dark/Light modus damit mer de hintegrund vom body uf schwarz/wiss ändere cha
+      //Funktion für  Dark/Light modus damit mer de hintegrund vom body uf schwarz/wiss ändere cha
       //Und demit sich  sicon entsprechend änderet
       function toggleDarkMode() {
         var body = document.querySelector('body');
@@ -57,38 +57,46 @@
       Y: 'N',
       Z: 'M'
     };
-    
-    function encode() {
-      const inputText = document.getElementById('inputText').value;
-      let outputText = '';
-    
-      for (let i = 0; i < inputText.length; i++) {
-        const currentChar = inputText[i];
-        const substitution = substitutionMap[currentChar.toUpperCase()] || currentChar;
-        outputText += substitution;
-      }
-    
-      document.getElementById('output').value = outputText;
-    }
-    
-    function decode() {
+
+      function encode() {
+        // Hol de Input mit de ID
         const inputText = document.getElementById('inputText').value;
         let outputText = '';
       
         for (let i = 0; i < inputText.length; i++) {
           const currentChar = inputText[i];
+          // Tuen bim substitutionMap nachluege welle zu welle passt
+          const substitution = substitutionMap[currentChar.toUpperCase()] || currentChar;
+          outputText += substitution;
+        }
+      
+        // Tuen de value mit de ID setze
+        document.getElementById('output').value = outputText;
+      }
+      
+      function decode() {
+        // Hol de Input mit de ID
+        const inputText = document.getElementById('inputText').value;
+        let outputText = '';
+
+        for (let i = 0; i < inputText.length; i++) {
+          const currentChar = inputText[i];
           let substitution = '';
       
           for (const key in substitutionMap) {
+            // Lueg ob de substitutionKey de gliche wert het wie de Input
             if (substitutionMap.hasOwnProperty(key) && substitutionMap[key].toUpperCase() === currentChar.toUpperCase()) {
+              // Tuens zrucksetze
               substitution = key;
               break;
             }
           }
       
+          // Tuens in lowercase zruck geh
           outputText += substitution.toLowerCase() || currentChar;
         }
       
+        // Tuen de value vom HTML text mit de ID setze und usgeh
         document.getElementById('output').value = outputText;
       }
-  
+      
