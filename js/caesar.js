@@ -41,7 +41,7 @@
           } else if (charCode >= 97 && charCode <= 122) {
             output += String.fromCharCode(((charCode - 97 + 26 - shift) % 26) + 97); // chlibuechstabe
           } else {
-            output += input.charAt(i); // nöd-alphabetische Zeiche 
+            output += input.charAt(i); // nöd-alphabetischi Zeiche 
           }
         }
   
@@ -51,7 +51,7 @@
       function encode() {
         var input = document.querySelector('.input-field').value;
         var output = '';
-        var shift = 3; // Number of shifts for encoding/decoding
+        var shift = 3; // Shift azahl fürd decode
       
         for (var i = 0; i < input.length; i++) {
           var charCode = input.charCodeAt(i);
@@ -60,7 +60,7 @@
           } else if (charCode >= 97 && charCode <= 122) {
             output += String.fromCharCode(((charCode - 97 + shift) % 26) + 97); // Lowercase letters
           } else {
-            output += input.charAt(i); // Non-alphabetic characters
+            output += input.charAt(i); // nöd-alphabetischi Zeiche 
           }
         }
       
