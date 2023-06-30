@@ -41,7 +41,7 @@
           } else if (charCode >= 97 && charCode <= 122) {
             output += String.fromCharCode(((charCode - 97 + 26 - shift) % 26) + 97); // chlibuechstabe
           } else {
-            output += input.charAt(i); // nöd-alphabetische Zeiche 
+            output += input.charAt(i); // nöd-alphabetischi Zeiche 
           }
         }
   
@@ -60,7 +60,7 @@
           } else if (charCode >= 97 && charCode <= 122) {
             output += String.fromCharCode(((charCode - 97 + shift) % 26) + 97); // Lowercase letters
           } else {
-            output += input.charAt(i); // Non-alphabetic characters
+            output += input.charAt(i); // nöd-alphabetischi Zeiche 
           }
         }
       
